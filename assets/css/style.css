@@ -1,0 +1,246 @@
+/* special-elite-regular - latin */
+@font-face {
+    font-family: 'Special Elite';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/special-elite-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/special-elite-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* exo-regular - latin */
+@font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/exo-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/exo-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* exo-700 - latin */
+  @font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/exo-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/exo-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* exo-900 - latin */
+  @font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/exo-v20-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/exo-v20-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ccc;
+    font-family: 'Special Elite';
+    font-size: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Exo';
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    margin: 3rem 0 2rem;
+    font-size: 2rem;
+}
+
+h4 {
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header nav {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: end;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.heroImg {
+    background: url("../img/bg.jpeg");
+    background-size: cover;
+    height: 800px;
+}
+
+.heroImg img {
+    width: 800px;
+    height: auto;
+    padding-top: 28%;
+}
+
+.text {
+    background-color: #fff;
+    padding: 4rem 0;
+    background-size: cover;
+    background-position: center;
+}
+
+main section:nth-of-type(1) {
+    padding: 6rem 0;
+    background: url("../img/beans_icon.png");
+}
+
+main section:nth-of-type(1)  article {
+    padding: 0 50% 0 5%;
+}
+
+main section:nth-of-type(2) {
+    background: url(../img/bridge_1.jpg);
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main section:nth-of-type(3) {
+    background: url("../img/cake_icon.png");
+}
+
+main section:nth-of-type(3)  article {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main section:nth-of-type(3)  article div {
+    border: 1px solid #000;
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+main section:nth-of-type(4) {
+    background: url(../img/bridge_2.jpg);
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main section:nth-of-type(5)  {
+    padding: 4rem 15%;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+main section:nth-of-type(5) article {
+    display: inline-block;
+    width: 48%;
+    margin-right: 2rem;
+}
+
+main section:nth-of-type(6) {
+    background: url(../img/bridge_3.jpg);
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+main section:nth-of-type(7),
+main section:nth-of-type(9)  {
+    padding: 4rem 15%;
+    margin: 0 auto;
+    background: url("../img/pie_icon.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main section:nth-of-type(9) {
+    background: url("../img/muffin_icon.png");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+
+main section:nth-of-type(7) article,
+main section:nth-of-type(9) article {
+    display: inline-block;
+    width: 48%;
+    margin-left: 2rem;
+}
+
+main section:nth-of-type(7) article a,
+main section:nth-of-type(9) article a {
+    border: 1px solid #000;
+    padding: 0.3rem;
+}
+
+main section:nth-of-type(8) {
+    background: url(../img/bridge_4.jpeg);
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
